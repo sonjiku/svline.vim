@@ -1,10 +1,11 @@
+if exists("g:loaded_simpletuiline")
+  finish
+endif
+let g:loaded_vinegar = 1
+
 au VimEnter * let w:WinAct=1
 au WinLeave * let w:WinAct=0
 au WinEnter * let w:WinAct=1
-au WinEnter * set statusline+=%{ChangeStatuslineColour()}%#Statusline#
-au WinEnter * set statusline-=%{ChangeStatuslineColour()}%#StatuslineNC#
-au WinLeave * set statusline+=%{ChangeStatuslineColour()}%#StatuslineNC#
-au WinLeave * set statusline-=%{ChangeStatuslineColour()}%#Statusline#
 
 let g:currentmode={
 	\ 'n'	:	'Normal ',
@@ -101,4 +102,3 @@ endfunction
 	set statusline=
 	set statusline^=%{ChangeStatuslineColour()}%#Statusline#
 	call Statline()
-
