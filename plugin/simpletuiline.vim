@@ -1,5 +1,6 @@
-"Author: sonja-22
-"
+" SimpleTuiLine plugin file
+" Author:	sonja-22
+" Home:		https://github.com/sonjiku/simpletuiline.vim
 if !(exists("g:enable_simpletuiline") && g:enable_simpletuiline == 0)
 
 	if exists("g:loaded_simpletuiline")
